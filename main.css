@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    /* box-sizing: inherit; */
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* box-sizing: border-box; */
+    font-size: 67.5%;
+  }
+  
+  /* ADD missing styles */
+  .container1.row {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  }
+  
+  .navbar1.col-8,
+  .navbar1.col-sm-4,
+  .navbar1.col-md-3 {
+      -webkit-transition: none;
+           -o-transition: none;
+              transition: none; /* remove Bootstrap's default transition */
+  }
+  
+  .nav{
+    font-size: 15px;
+  }
+  .navbar{
+    color: black;
+  }
+  .content1.col {
+      min-width: 100%; /* important for navbar display */
+      overflow-x: hidden; /* important for navbar display */
+  }
+  
+  .brand1 h1 {
+      /*font-size:20px; */
+      font-size: 2.25rem;
+      font-weight: 600;
+  }
+  
+  .caption{
+  font-size: 1.6rem;
+  }
+  
+  
+  
+  .footer {
+    padding: 5rem 3rem;
+    background-color: #f5efec;
+  }
+  
+  .footer-nav {
+    display: flex;
+  }
+  
+  /* add for flex behaviour */
+  .sign-up {
+    width: 20rem;
+    order: 1;
+  }
+  
+  .footer-nav__group {
+    width: calc((100% - 20rem) / 4); /* 20rem = sign-up width */ 
+    order: 1; 
+    /* width: 16rem; */
+    padding: 2rem;
+  }
+  
+  /* add to remove bullet points */
+  .footer-nav__group ul {
+    list-style: none;
+  }
+  
+  .footer-nav__heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-nav__link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 0.65rem;
+  }
+  
+  /* add an active css selector */
+  .footer-nav__link:hover,
+  .footer-nav__link:active {
+    transition: all ease-in-out 250ms;
+    color: rgba(34, 34, 34, 0.5);
+  }
+  
+  /*
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  */
+  
+  /*  Large devices (desktops, 991px and down) */
+  @media (max-width: 991px) { 
+    .shop-item {
+      width: calc((100% - 1.5rem) / 2);
+    }
+  
+    /* add to remove right padding form every forth item */
+    .shop-item:nth-of-type(3n) {
+      margin-right: 1.5rem;
+    }
+  
+    .shop-item:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+  
+  /* Medium devices (tablets, 767px and down) */
+  @media (max-width: 767px) { 
+    .shop-item {
+      width: 100%;
+    }
+  
+    .shop-item,
+    .shop-item:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  
+    .footer-nav {
+      flex-wrap: wrap;
+    }
+  
+    .sign-up {
+      width: 100%;
+      order: 0;
+    }
+  
+    .footer-nav__group {
+      width: calc(100% / 2);
+    }
+  }
+  
+  /* Small devices (landscape phones, 575px and down) */
+  @media (max-width: 575px) { 
+    .categories {
+      display: none;
+    }
+  
+    
+   
+    .footer-nav__group {
+      width: calc(100% / 2);
+    }
+  }
+  
+  
+  
+  
+
+

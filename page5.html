@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CFG PROJECT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap"
+        crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        crossorigin="anonymous">
+    
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="page5.css">
+</head>
+
+<body>
+   <!-- Wrapper -->
+    <!-- CHANGE to container-lg or container-xl -->
+    <div class="container-lg">
+       <!-- Container -->
+       <div class="container1 row align-items-stretch">
+          <!-- Toggle Navigation -->
+          <nav id="navbarToggleContent" class="navbar1 col-8 col-sm-4 col-md-3 collapse navbar-dark bg-dark">
+              <ul class="navbar-nav pt-5">
+                <li class="nav-item active">
+                   <a class="nav-link" href="page2.html">
+                      Clothes <span class="sr-only">(current)</span>
+                    </a>
+                 </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Shoes</a>
+                 </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Accessories</a>
+                 </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Bags</a>
+                 </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="page2.html">SALE</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="page2.html">Bestsellers</a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Designers</a>
+                  </li>
+                </ul>
+            </nav>
+        
+            <!-- Content -->
+            <div class="content1 col p-0">
+               <!-- Header -->
+               <header class="navbar navbar-light">
+                    <!-- Toggle Navigation button -->
+                    <!-- ADD d-md-none to hide on medium and large screens -->
+                    <button
+                        class="navbar-toggler d-md-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarToggleContent"
+                        aria-controls="navbarToggleContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>   
+
+                    <!-- Brand -->
+                    <!-- ADD this div to center the brand -->
+                    <div class="mx-auto pl-5 pl-md-0">
+                        <a href="#" class="navbar-brand brand1"><h1>CFG PROJECT</h1></a>
+                    </div>
+                    
+ 
+                    <div>
+                      <!-- Search button -->
+                      <a href="page7.html"><button
+                        onclick="shop()"
+                        class="btn btn-lg btn-light fas fa-shopping-bag mr-2"
+                        type="button"
+                        aria-label="Go to checkout">
+                      </button></a> 
+                        
+                      <!-- Search button -->
+                      <button
+                        onclick="search()"
+                        class="btn btn-lg btn-light fas fa-search"
+                        type="button"
+                        aria-label="Search site">
+                     </button>
+                   </div>
+                </div>
+           </div>
+      </div>
+  </header>
+ 
+
+  <main>
+   <!-- ADD d-none d-md-block to hide on small screens-->
+   <div class="mb-2 d-none d-md-block" role="navigation">
+      <!-- CHANGE to simple bootstrap nav -->
+      <ul class="nav justify-content-between">
+         <li class="nav-item">   
+            <a href="page2.html" class="nav-link text-dark">New Arrivals</a>
+         </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="page2.html">Designers</a>
+         </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="page2.html">Bestsellers</a>
+         </li>
+
+         <li class="nav-item">
+            <a class="nav-link active text-dark" href="page2.html">
+               Clothing <span class="sr-only">(current)</span>
+            </a>
+         </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="page2.html">Shoes</a>
+         </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="page2.html">Bags</a>
+         </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="page2.html">Accessories</a>
+         </li>
+
+          <li class="nav-item">
+             <a class="nav-link text-dark" href="page2.html">SALE</a>
+          </li>
+       </ul>
+    </div>
+      
+      
+      <div class=" box text-center bg-light">
+        <h2 class="header2">COMING SOON</h2>
+      </div>
+                    
+           
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- use ul instead of nav -->
+        <div class="footer-nav">
+            <div class="footer-nav__group">
+                <h4 class="footer-nav__heading">Info</h4>
+                  <ul>
+                    <li><a href="size.html" class="footer-nav__link">Sizing</a></li>
+                    <li><a href="page4.html" class="footer-nav__link">Contact</a></li>
+                    <li><a href="privacy.html" class="footer-nav__link">Privacy Policy</a></li>
+                    <li><a href="privacy.html" class="footer-nav__link">Cookie Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-nav__group">
+                <h4 class="footer-nav__heading">Orders</h4>
+                <ul>
+                    <li><a href="shipping.html" class="footer-nav__link">Shipping + Handling</a></li>
+                    <li><a href="return.html" class="footer-nav__link">Return + Exchanges</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav__group">
+                <h4 class="footer-nav__heading">Locations</h4>
+                <ul>
+                    <li><a href="stores.html" class="footer-nav__link">Stores</a></li>
+                    <li><a href="stocklist.html" class="footer-nav__link">Stocklists</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav__group">
+                <h4 class="footer-nav__heading">Social</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/codefirstgirls/?hl=fi" class="footer-nav__link">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/codefirstgirls" class="footer-nav__link">Facebook</a></li>
+                    <li><a href="https://twitter.com/CodeFirstGirls" class="footer-nav__link">Twitter</a></li>
+                    <li><a href="#" class="footer-nav__link">Pinterest</a></li>
+                </ul>
+            </div>
+            <div class="sign-up">
+                <h2 class="heading-secondary">Newsletter</h2>
+                <form class="sign-up__form" action="#" method="post">
+                    <input class="sign-up__input" type="email" placeholder="Email Address">
+                    <!-- <button class="sign-up__btn" type="button">Sign up</button> -->
+                    <input type="submit" value="Sign up">
+                </form>
+            </div>  
+        </div><!-- end of footer-nav -->
+    </footer>
+  </body>
+
+  </html>

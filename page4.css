@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    /* box-sizing: inherit; */
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* box-sizing: border-box; */
+    font-size: 67.5%;
+  }
+  
+  body {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #222;
+  }
+  
+  
+  /* ADD missing styles */
+  .container1.row {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  }
+  
+  .navbar1.col-8,
+  .navbar1.col-sm-4,
+  .navbar1.col-md-3 {
+      -webkit-transition: none;
+           -o-transition: none;
+              transition: none; /* remove Bootstrap's default transition */
+  }
+  
+    
+  .navbar{
+    color: black;
+  }
+  
+  .nav{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .content1.col {
+      min-width: 100%; /* important for navbar display */
+      overflow-x: hidden; /* important for navbar display */
+  }
+  
+  .brand1 h1 {
+      /*font-size:20px; */
+      font-size: 2.5rem;
+      font-weight: 600;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between; /* use this property instead of auto margins */
+    align-items: baseline;
+    color: #fff;
+    
+  }
+  
+  .container {
+    max-width: 130rem; /* limit the max width */
+    margin: 0 auto; /* center content on page */
+    padding:  3rem 2rem !important; 
+  }
+  
+  .container2{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    margin-right:2rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    padding: 2rem 0rem;
+    border-radius: 4px;
+  }
+
+  h2{
+      font-weight: 600;
+  }
+  
+  .form-control{
+    font-size: 1.8rem;
+  }
+  
+  .form-group{
+    padding: 0.5rem;
+    margin: 2rem 4rem
+  }
+  
+  .submit{
+    margin-left: 5rem;
+    
+  }
+  
+  
+  
+  .footer {
+    padding: 5rem 3rem;
+    background-color: #f5efec;
+  }
+  
+  .footer-nav {
+    display: flex;
+  }
+  
+  /* add for flex behaviour */
+  .sign-up {
+    width: 20rem;
+    order: 1;
+  }
+  
+  .footer-nav__group {
+    width: calc((100% - 20rem) / 4); /* 20rem = sign-up width */ 
+    order: 1; 
+    /* width: 16rem; */
+    padding: 2rem;
+  }
+  
+  /* add to remove bullet points */
+  .footer-nav__group ul {
+    list-style: none;
+  }
+  
+  .footer-nav__heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-nav__link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 0.65rem;
+  }
+  
+  /* add an active css selector */
+  .footer-nav__link:hover,
+  .footer-nav__link:active {
+    transition: all ease-in-out 250ms;
+    color: rgba(34, 34, 34, 0.5);
+  }
+  
+  
+  
+  /* Medium devices (tablets, 767px and down) */
+  @media (max-width: 767px) { 
+    .shop-item {
+      width: 100%;
+    }
+  
+  
+   
+    .footer-nav {
+      flex-wrap: wrap;
+    }
+  
+    .sign-up {
+      width: 100%;
+      order: 0;
+    }
+  
+    .footer-nav__group {
+      width: calc(100% / 2);
+    }
+  }
+  
+  
